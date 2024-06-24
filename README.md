@@ -54,3 +54,6 @@ date | post的create_date，例如2024-03-26T16:46:04+08:00|
 | tags: ["tt"] |文章的标签|
 | categories: ["tp"] |文章的类别|
 | lastmod: ["tp"] | post的update_time，例如:2024-03-26T16:46:04+08:00|
+
+
+如果出现error parse之类的报错， 请确认在wordpress服务器的php上安装了php-xml
