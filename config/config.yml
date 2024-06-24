@@ -1,0 +1,5 @@
+settings:
+  path: 'your markdown path directory'  # your path where store your markdown files
+  domain: 'http://your_domain/xmlrpc.php'  # e.g. https://jwblog.xyz
+  username: 'your username
+  password: 'your passwd'
