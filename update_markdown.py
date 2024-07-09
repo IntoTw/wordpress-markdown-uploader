@@ -73,6 +73,7 @@ def update_post(edit_post_map):
                     config['settings']['password'])
 
     find_map = {}
+    lower_edit_post_map = {k.lower(): v for k, v in edit_post_map.items()}
     # 查找到所有需要更新的文章的信息
     offset = 0  # 每个batch的初始下标位置
     batch = 20  # 每次得到batch个post，存入posts中
@@ -82,7 +83,7 @@ def update_post(edit_post_map):
             break  # no more posts returned
         for post in posts:
             post_name = post.struct['post_name']
-            if post_name in edit_post_map:
+            if post_name.lower() in lower_edit_post_map:
                 find_map[post_name] = post
         offset = offset + batch
 
